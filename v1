@@ -2131,7 +2131,7 @@ Library.new = function()
 				return print(("%s is not a valid folder."):format(FolderName))
 			end
 			
-			if not isfile(("%s\%s.json"):format(FolderName, ConfigName)) then
+			if not isfile(("%s/%s.json"):format(FolderName, ConfigName)) then
 				return print(("%s is not a valid config."):format(ConfigName))
 			end
 			
